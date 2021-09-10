@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Open";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Open</h2>
+
+<form action="Open" method="post">
+    <label>@ViewBag.Id</label>
+    <label>@ViewBag.Name</label>
+    <label>@ViewBag.Marks</label>
+    <input type="submit" name="Open" value="Mở" />
+    <p>@ViewBag.Open</p>
+</form>

@@ -1,0 +1,15 @@
+﻿@model MVCFPT.Models.StudentInfo
+@{
+    ViewBag.Title = "SaveStudent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>SaveStudent</h2>
+<form action="SaveStudent" method="post">
+    <input type="text" name="Id" value="" placeholder="ID Sinh viên" />
+    <input type="text" name="Name" value="" placeholder="Tên sinh viên"/>
+    <input type="text" name="Marks" value="" placeholder="Điểm trung bình"/>
+    <input type="submit" name="Save" value="Lưu" /><br />
+        @Html.ActionLink("Mở","Open","Home")
+    <p>@ViewBag.Save</p>
+</form>
